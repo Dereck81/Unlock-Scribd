@@ -2,7 +2,7 @@
 
 from typing import Union
 
-def unlockScribd(url: str) -> Union[str, None]:
+def unlock_scribd(url: str) -> Union[str, None]:
 	params: list = url.split('/')
 	try:
 		if params[4].isdigit():
@@ -13,4 +13,4 @@ def unlockScribd(url: str) -> Union[str, None]:
 		return None
 
 url: str = input("URL: ")
-print("URL Unlock: "+unlockScribd(url))
+print("URL Unlock: " + unlock_scribd(url))
